@@ -1,8 +1,9 @@
 {
-  "name": "create-react-component",
-  "displayName": "create-react-component",
+  "name": "create-react-component-with-test-file",
+  "displayName": "create-react-component-with-test-file",
   "description": "",
   "version": "0.0.1",
+  "publisher": "JiaxiYang",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -14,8 +15,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "create-react-component.helloWorld",
-        "title": "Hello World"
+        "command": "create-react-component.create",
+        "title": "Create React Component"
       }
     ]
   },

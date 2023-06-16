@@ -1,6 +1,5 @@
 export function generateComponentTemplate(componentName: string) {
   return `
-  
   type ${componentName}Props = {}
 
   export function ${componentName}({}: ${componentName}Props):JSX.Element {
@@ -10,8 +9,6 @@ export function generateComponentTemplate(componentName: string) {
       </div>
     );
   }
-  
-  
   `;
 }
 
@@ -21,14 +18,13 @@ export function generateTestTemplate(componentName: string) {
   import { ${componentName} } from '../${componentName}';
   
   describe('${componentName}', () => {
-
-  it('should render the component', () => {
-    render(<${componentName} />);
-    expect(screen.getByTestId('${getKebabCaseNames(
-      componentName
-    )}')).toBeInTheDocument();
-  }
-}
+    it('should render the component', () => {
+      render(<${componentName} />);
+      expect(screen.getByTestId('${getKebabCaseNames(
+        componentName
+      )}')).toBeInTheDocument();
+    });
+  });
   `;
 }
 

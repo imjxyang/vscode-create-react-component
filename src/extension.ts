@@ -8,7 +8,7 @@ import { generateComponentTemplate, generateTestTemplate } from "./template";
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    "create-react-component.helloWorld",
+    "create-react-component.create",
     function () {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {
